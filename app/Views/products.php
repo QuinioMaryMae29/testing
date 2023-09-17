@@ -9,14 +9,14 @@
     <br>
     <form action="/save" method="post">
         <label>code:</label>
-        <input type= "hidden" name="id" value="<?= $pro['id']?>"> 
-        <input type="text" name="code" placeholder="code" value="<?= $pro['code']?>">
+        <input type= "hidden" name="id" > 
+        <input type="text" name="code" placeholder="code" >
         <br><br>
         <label>name:</label>
-        <input type="text" name="name" placeholder="name" value="<?= $pro['name']?>">
+        <input type="text" name="name" placeholder="name" >
         <br><br>
         <label>quantity:</label>
-        <input type="text" name="quantity" placeholder="quantity" value="<?= $pro['quantity']?>">
+        <input type="text" name="quantity" placeholder="quantity" >
         <br><br>
         <input type="submit" value="Save">
     </form>
