@@ -6,18 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <br>
     <form action="/save" method="post">
         <label>code:</label>
-        <input type="text" name="code" value="<?= $pro['code']?>">
-        <br>
+        <input type="text" name="code" placeholder="code">
+        <br><br>
         <label>name:</label>
-        <input type="text" name="name" value="<?= $pro['name']?>">
-        <br>
+        <input type="text" name="name" placeholder="name">
+        <br><br>
         <label>quantity:</label>
-        <input type="text" name="quantity" value="<?= $pro['quantity']?>">
-        <br>
+        <input type="text" name="quantity" placeholder="quantity">
+        <br><br>
         <input type="submit" value="save">
     </form>
+    <br>
     <h1>Product Listing</h1>
     <table border="1">
         <tr>
