@@ -18,7 +18,7 @@
         <label>quantity:</label>
         <input type="text" name="quantity" placeholder="quantity" value="<?= $pro['quantity']?>">
         <br><br>
-        <input type="submit" value="save">
+        <input type="submit" value="Save">
     </form>
     <br>
     <h1>Product Listing</h1>
