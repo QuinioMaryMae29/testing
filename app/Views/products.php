@@ -9,13 +9,14 @@
     <br>
     <form action="/save" method="post">
         <label>code:</label>
-        <input type="text" name="code" placeholder="code">
+        <input type= "hidden" name="id" value="<?= $pro['id']?>"> 
+        <input type="text" name="code" placeholder="code" value="<?= $pro['code']?>">
         <br><br>
         <label>name:</label>
-        <input type="text" name="name" placeholder="name">
+        <input type="text" name="name" placeholder="name" value="<?= $pro['name']?>">
         <br><br>
         <label>quantity:</label>
-        <input type="text" name="quantity" placeholder="quantity">
+        <input type="text" name="quantity" placeholder="quantity" value="<?= $pro['quantity']?>">
         <br><br>
         <input type="submit" value="save">
     </form>
@@ -33,7 +34,7 @@
                 <td><?= $pr['code'] ?></td>
                 <td><?= $pr['name'] ?></td>
                 <td><?= $pr['quantity'] ?></td>
-                <td><a href="/delete/<?= $pr['id'] ?>">delete</a> || <a href="/edit/<?= $pr['id'] ?>">edit</a></td>
+                <td><a href="/delete/<?= $pr['id'] ?>">Delete</a>||<a href="/edit/<?= $pr['id'] ?>">Edit</a> </td>
             </tr>
         <?php endforeach; ?>
     </table>
